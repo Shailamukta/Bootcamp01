@@ -1,26 +1,104 @@
 package oopExam;
 
-/*
- NOW, Iphone1 came in 2000, but the new model Iphone2, Iphone3 came in 2001. 
- Assume Iphone1 is a superclass and Iphone2, Iphone3 is the child class of the Iphone1. Implement that here.
- */
+public class Iphone2 extends Iphone1 {
 
-public class Iphone2 {
-	
-	
-	/*1)
-	 *In IPhone2, Initialize a char variable
-	 * userOfIphone2 (M or F). create default and parameterized constructor, a void
-	 * type method iPhone2Info, a parameterized method with same name iPhone2Info
-	 * inside Iphone2 class. Use the super method and super keyword in constructor,
-	 * and super keyword in methods of Iphone2. Call constructor and methods. Can
-	 * you call variable by super keyword? create a public variable inside Iphone1
-	 * and execute it in Iphone2. Execute all of them in TestPhone. [points: 70]
-	 */
+	public char userofIphone2 = 'F';
 
-	/*
-	 * Write a method inside them related to one of the features like dropbox and
-	 * print out related info.
-	 */
-	
+	public Iphone2() {
+		super();
+		super.regularClassInfo();
+		super.youtube();
+		super.interfaceInfo();
+		super.call();
+		super.camera();
+		super.battery();
+		super.message();
+		super.pagerInfo();
+		super.appleWatchInfo();
+		super.wakitokiInfo();
+		super.watchInfo();
+		super.digitalWatchInfo();
+		super.abstractClassInfo();
+		super.appleWatchSeries5Info();
+
+		super.model = "Apple";
+		super.yearOfEstablishment = 2001;
+		System.out.println("Phone Model: " + model + ".The Year of Establishment in " + yearOfEstablishment);
+
+		System.out.println("This is a default constructor from Regular Class Iphone2.");
+	}
+
+	public Iphone2(char userofIphone2) {
+		super();
+		super.regularClassInfo();
+		super.youtube();
+		super.interfaceInfo();
+		super.call();
+		super.camera();
+		super.battery();
+		super.message();
+		super.pagerInfo();
+		super.appleWatchInfo();
+		super.wakitokiInfo();
+		super.watchInfo();
+		super.digitalWatchInfo();
+		super.abstractClassInfo();
+		super.appleWatchSeries5Info();
+		super.model = "Apple";
+		super.yearOfEstablishment = 2001;
+
+		this.userofIphone2 = userofIphone2;
+		System.out.println("Phone Model: " + model + ".The Year of Establishment in " + yearOfEstablishment);
+		System.out.println("The User of Iphone2 is  ." + userofIphone2);
+	}
+
+	public void iphone2Info() {
+		super.regularClassInfo();
+		super.youtube();
+		super.interfaceInfo();
+		super.call();
+		super.camera();
+		super.battery();
+		super.message();
+		super.pagerInfo();
+		super.appleWatchInfo();
+		super.wakitokiInfo();
+		super.watchInfo();
+		super.digitalWatchInfo();
+		super.abstractClassInfo();
+		super.appleWatchSeries5Info();
+		super.model = "Apple";
+		super.yearOfEstablishment = 2001;
+		System.out.println("Phone Model: " + model + ".The Year of Establishment in " + yearOfEstablishment);
+
+		System.out.println("This is a void type method. ");
+	}
+
+	public void iphone2Info(char userofIphone2) {
+		super.regularClassInfo();
+		super.youtube();
+		super.interfaceInfo();
+		super.call();
+		super.camera();
+		super.battery();
+		super.message();
+		super.pagerInfo();
+		super.appleWatchInfo();
+		super.wakitokiInfo();
+		super.watchInfo();
+		super.digitalWatchInfo();
+		super.abstractClassInfo();
+		super.appleWatchSeries5Info();
+		super.model = "Apple";
+		super.yearOfEstablishment = 2001;
+
+		System.out.println("Phone Model: " + model + ".The Year of Establishment in " + yearOfEstablishment);
+		System.out.println("The User of Iphone2 is  " + userofIphone2);
+	}
+
+	public void dropbox() {
+		System.out.println(
+				"Dropbox is one of a Important features of iphone where we can store and share files.All of our files are backed up to the cloud and available in online.");
+	}
+
 }

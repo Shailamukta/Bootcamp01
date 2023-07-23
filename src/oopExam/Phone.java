@@ -1,27 +1,42 @@
 package oopExam;
 
-/*
- Points: 70
-
-1) What are the features of Interface you know? use multiple line comments here to describe it. you can use newline (\n) and tab(\t)
- 
-2) if Phone interface, inherit other Interface -- Pager and Wakitoki, use appropriate keywords to inherit them in line 11. if Phone interface can inherit regular class - LandPhone and one abstract class SatelitePhone, use appropriate keywords to inherit them. if not, then ignore it
+/*Inheritance is a mechanism where a new class inherits the properties and methods of other classes. 
+-- Parents class: The class from which a subclass/child class is derived is called a parent class or base class or superclass. 
+-- Child class: A class derived from another class is called a Child class or Subclass.
+There are some types of Inheritance:
+ -- Single Inheritance: When a derived class inherits properties and behavior from a single parent class/base class/superclass, it is called single inheritance.
+-- Multi-Level Inheritance: A derived class created from another derived class is called Multi Level Inheritance.
+-- Hierarchical Inheritance: More than one derived class created from a single base class is called Hierarchical Inheritance.
+-- Multiple Inheritance: Classes that combine aspects of multiple classes and their corresponding hierarchies.
  */
 
-public interface Phone {
+public interface Phone extends Pager, Wakitoki {
 
-/*
- 3) Create a variable and a constructor if possible, if not possible to create variable and constructor, use multiple line comments with explanation
- */
-	
-	
-/*
-4) Create four abstract method interfaceInfo (created below), call, message and camera 
-*/
+	/*
+	 * Inside Interface, variable can not be declared.we must have to initialize.The
+	 * variables inside Interface are final and static in nature.
+	 */
+
+	/*
+	 * Interfaces cannot have constructors.Interface doesn't have method body like
+	 * classes.
+	 */
 	public void interfaceInfo();
-	
-/*
-5) Create 2 non-abstract method - battery and wireless which are implemented inside this interface. Inside sysout print example-- "battery is a --- method from Java --?--" and complete the wireless one
- */
+
+	public void call();
+
+	public abstract void message();
+
+	public abstract void camera();
+
+	public default void battery() {
+		System.out.println(
+				"battery is a non-abstract and default type method in interface which are implemented in nature,It comes from Java 1.8. ");
+	}
+
+	public static void wireless() {
+		System.out.println(
+				"wireless is a non-abstract and static type method in interface which are implemented in nature,It comes from Java 1.8. ");
+	}
 
 }
