@@ -127,6 +127,25 @@ public class TestPhone {
 		cI6.materials(50, 80);
 		cI6.materials(50, 80, "90");
 		cI6.materials(50, 80, "90", 25);
+		cI6.email();
+		cI6.photos();
+		cI6.iphone2Info();
+		cI6.iphone2Info('M');
+		cI6.regularClassInfo();
+		cI6.dropbox();
+		cI6.interfaceInfo();
+		ConfiguredIphone6.youtube();
+		cI6.call();
+		cI6.message();
+		cI6.camera();
+		cI6.battery();
+		cI6.appleWatchInfo();
+		cI6.appleWatchSeries5Info();
+		cI6.abstractClassInfo();
+		cI6.pagerInfo();
+		cI6.wakitokiInfo();
+		cI6.watchInfo();
+		cI6.digitalWatchInfo();
 
 	}
 
